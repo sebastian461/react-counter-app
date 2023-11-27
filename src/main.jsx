@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client';
-import {HelloWorldApp} from './HelloWorldApp'
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { HelloWorldApp } from "./HelloWorldApp";
+import { FirstApp } from "./FirstApp";
 
 /* Esta es la sintaxis a seguir para renderizar los componentes en el index.html a traves del modo estricto */
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HelloWorldApp />
+    <FirstApp />
   </React.StrictMode>
-)
+);
