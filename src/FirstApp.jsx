@@ -41,3 +41,9 @@ FirstApp.propTypes = {
   edad: PropTypes.number.isRequired,
   genero: PropTypes.string.isRequired,
 };
+
+/* Tambien se pueden definir los valores por defecto que tendran las props */
+FirstApp.defaultProps = {
+  edad: 25,
+  genero: "Masculidno",
+};
