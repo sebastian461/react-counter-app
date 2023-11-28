@@ -11,10 +11,18 @@ export const CounterApp = ({ value }) => {
       son manipuladas por el usuario o por la propia aplicación) */
   const [counter, setCounter] = useState(value);
 
-  const handledAdd = () => {
+  const handleAdd = () => {
     /* Se puede usar las dos formas */
     setCounter(counter + 1);
     //setCounter((c) => c + 1);
+  };
+
+  const handleLess = () => {
+    setCounter(counter - 1);
+  };
+
+  const handleRest = () => {
+    setCounter(() => value);
   };
 
   return (
@@ -23,7 +31,9 @@ export const CounterApp = ({ value }) => {
       {/* En este caso ya no se usa el valor pasado al componente sino a la que se define en el hook */}
       <h2>{counter}</h2>
       {/* Está es la sintaxis para agregar eventos, en este caso un evento click */}
-      <button onClick={handledAdd}>+1</button>
+      <button onClick={handleAdd}>+1</button>
+      <button onClick={handleLess}>-1</button>
+      <button onClick={handleRest}>Reset</button>
     </>
   );
 };
