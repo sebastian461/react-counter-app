@@ -28,7 +28,7 @@ export const FirstApp = ({ edad, genero }) => {
       </h1>
       <h2>Ingeniero en Ciencias de la computación</h2>
       <p>Edad: {edad}</p>
-      <p>Genero: {genero}</p>
+      <p data-testid="test-genero">Genero: {genero}</p>
       {/* Está es la manera de ver un objeto renderizado en React */}
       <code>{JSON.stringify(sebastianObj)}</code>
     </>
@@ -45,5 +45,5 @@ FirstApp.propTypes = {
 /* Tambien se pueden definir los valores por defecto que tendran las props */
 FirstApp.defaultProps = {
   edad: 25,
-  genero: "Masculidno",
+  genero: "Masculino",
 };
