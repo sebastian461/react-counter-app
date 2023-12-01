@@ -33,7 +33,9 @@ export const CounterApp = ({ value }) => {
       {/* Está es la sintaxis para agregar eventos, en este caso un evento click */}
       <button onClick={handleAdd}>+1</button>
       <button onClick={handleLess}>-1</button>
-      <button onClick={handleRest}>Reset</button>
+      <button aria-label="btn-reset" onClick={handleRest}>
+        Reset
+      </button>
     </>
   );
 };
